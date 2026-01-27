@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Teste</title>
+</head>
+<body>
+    <h1>Teste Widget Blip Chat</h1>
+</body>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('dGVzdGV0ZXN0Y2h5OmJhZWM5MTk1LTQxOWQtNDc4MS1hYjFjLTQ4YzgzZjE1MzhhYg==')
+                .withButton({"color":"#0096fa","icon":""})
+                .withCustomCommonUrl('https://take-fluna.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script>
+</html>
